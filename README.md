@@ -30,7 +30,7 @@ File Structuring
 
 ER Diagram
 ----------------------------------------------------------------------------------------------
-<img width="100%" src="./diagram.png" alt="ERD">
+<img width="100%" src="./dev-testing/diagram.png" alt="ERD">
 
 
 Technologies
@@ -61,3 +61,11 @@ npm install
 ```bash
 node server.js
 ```
+
+
+API testing with Postman
+----------------------------------------------------------------------------------------------
+
+###### provided postman collection json file for testing APIs
+
+[Postman_collection.json](./dev-testing/sequelize.postman_collection.json)
