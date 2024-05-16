@@ -7,6 +7,9 @@ const likeRoute = require('./likes/likeRoute');
 
 
 // routes
+// app.use('/', (req, res) => {
+//     res.send('Welcome to the blog API');
+// });
 
 app.use('/users', userRoute);
 

@@ -1,0 +1,107 @@
+###
+
+# User API
+
+# 1. get all users
+GET http://localhost:8000/api/users
+###
+
+# 2. get user by id
+GET http://localhost:8000/api/users/3
+###
+
+# 3. create user
+POST http://localhost:8000/api/users
+Content-type: application/json
+
+{
+    "username": "Asif",
+    "password": "sae3fas",
+    "age": 34
+}
+###
+
+# 4. update user age
+PUT http://localhost:8000/api/users/2
+Content-type: application/json
+
+{
+    "age": 25
+}
+###
+
+# 5. delete user
+DELETE http://localhost:8000/api/users/1
+
+###
+# 6.Get user with blogs
+GET http://localhost:8000/api/users/blogs/3
+###
+
+# Blog API
+
+# 1. get all blogs
+GET http://localhost:8000/api/blogs
+###
+
+# 2. create blog
+POST http://localhost:8000/api/blogs
+Content-type: application/json
+
+{
+    "title" : "My second blog",
+    "subtitle" : "This is a demo blog",
+    "content" : "This is another demo blog content where I am writing some demo text",
+    "tags" : ["attempt", "second"],
+    "user_id" : 3
+}
+###
+
+# 3. delete blog
+DELETE http://localhost:8000/api/blogs/1
+###
+
+
+
+# Comment API
+
+# 1. get all comments
+GET http://localhost:8000/api/comments
+###
+
+# 2. get comment by id
+GET http://localhost:8000/api/comments/1
+###
+
+# 3. create comment
+POST http://localhost:8000/api/comments
+Content-type: application/json
+
+{
+    "content" : "This is a demo comment",
+    "user_id" : 1,
+    "blog_id" : 1
+}
+###
+
+# 4. get comments by blog id
+GET http://localhost:8000/api/comments/blog/2
+###
+
+
+
+# like API
+
+# 1. get all likes
+GET http://localhost:8000/api/likes
+###
+
+# 2. give like to a blog
+POST http://localhost:8000/api/likes
+Content-type: application/json
+
+{
+    "blog_id": 1,
+    "user_id": 1
+}
+###
